@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <% let count=0 %>
+    <!-- All the filtered project appeared here , Filtered projects are subset of projects  -->
+    <div class="listOfProjectsContainer">
+    <% for(let bug of bugs){ %>
+        <% if(bug.author.name==author_name){ %>
+        <div class="projectDisplayClass">
+        <% count++ %>
+        <span class="labelsHeading">name of bug:</span> <%=bug.title %>, <br> <hr>
+        <span class="labelsHeading">Description of Bug:</span> <%= bug.description %>, <br> <hr>
+        <span class="labelsHeading">Label of Bug: </span><%= bug.labels %>, <br> <hr>
+        <span class="labelsHeading">Author of Bug:</span> <%= author_name%> <br> <br>
+        <% console.log(bug,' is the bug') %>
+        </div>
+
+        <% } %>
+        <% } %>
+    <% if(count==0){ %>
+        No Bug by Author <strong> <%= author_name %> </strong> for this Project 
+        <% } %>
+    </div>
+    
+</body>
+</html>
