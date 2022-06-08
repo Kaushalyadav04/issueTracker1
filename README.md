@@ -1,7 +1,7 @@
 # issueTracker
 Issuetracker is inspired from github issuetracker and it has multiple filters and search options as well.
 A scalable full stack web application which lets users **create projects,bugs and use multiple feature options, search options for a project**.
-Deployed at : https://issuetracker-gaurav.herokuapp.com/
+
 # Tech Stack Used:
 ## Node.js:
    for server-side scripting.
