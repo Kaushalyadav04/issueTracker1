@@ -29,7 +29,7 @@ A scalable full stack web application which lets users **create projects,bugs an
   2) Change the current working directory to the location where you want the cloned directory.
 
   ```
-  $ git clone https://github.com/gauravkhede/issueTracker
+  $ git clone https://github.com/Kaushalyadav04/issueTracker1
   ```
 
   3) Install all the dependencies by running :
